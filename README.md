@@ -1,32 +1,31 @@
 # EX-05-Feature-Generation
 
 
-## AIM
+# AIM:
 To read the given data and perform Feature Generation process and save the data to a file. 
 
-# Explanation
+# Explanation:
 Feature Generation (also known as feature construction, feature extraction or feature engineering) is the process of transforming features into new features that better relate to the target.
  
 
-# ALGORITHM
-### STEP 1
+# ALGORITHM:
+## STEP 1:
 Read the given Data
-### STEP 2
+## STEP 2:
 Clean the Data Set using Data Cleaning Process
-### STEP 3
+## STEP 3:
 Apply Feature Generation techniques to all the feature of the data set
-### STEP 4
+## STEP 4:
 Save the data to the file
 
 
-# CODE
-
+# PROGRAM:
+## Data.csv
+~~~
 Program Developed by: Yuvadarshini S
 Register number:212221230126
 
-# OUPUT
-# Data.csv
-~~~
+
 import pandas as pd
 df=pd.read_csv("data.csv")
 df
@@ -62,7 +61,7 @@ oe2=OrdinalEncoder(categories=[edu])
 df1['Ord_2']= oe2.fit_transform(df1[["Ord_2"]])
 df1
 
-#feature scaling
+# Feature scaling:
 from sklearn.preprocessing import MinMaxScaler
 sc=MinMaxScaler()
 df2=pd.DataFrame(sc.fit_transform(df1),columns=['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
@@ -83,7 +82,8 @@ sc3=RobustScaler()
 df5=pd.DataFrame(sc3.fit_transform(df1),columns=['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
 df5
 ~~~
-# Encoding.csv
+
+## Encoding.csv
 ~~~
 import pandas as pd
 df=pd.read_csv("Encoding Data.csv")
@@ -133,7 +133,8 @@ sc3=RobustScaler()
 df4=pd.DataFrame(sc3.fit_transform(df1),columns=['id', 'bin_1', 'bin_2', 'nom_0','ord_2'])
 df4
 ~~~
-# Titanic.csv
+
+## Titanic.csv
 ~~~
 import pandas as pd
 df=pd.read_csv("titanic_dataset.csv")
