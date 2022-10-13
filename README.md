@@ -4,7 +4,7 @@
 # AIM:
 To read the given data and perform Feature Generation process and save the data to a file. 
 
-# Explanation:
+# EXPLANATION:
 Feature Generation (also known as feature construction, feature extraction or feature engineering) is the process of transforming features into new features that better relate to the target.
  
 
@@ -191,7 +191,7 @@ df5=pd.DataFrame(sc3.fit_transform(df1),columns=['Passenger','Survived','Pclass'
 df5
 ~~~
 
-# Output
+# OUTPUT:
 
 ![image](https://user-images.githubusercontent.com/94828147/194209465-9441f5e0-a26e-4f74-b283-fce38528cb02.png)
 
@@ -252,7 +252,7 @@ df5
 ![image](https://user-images.githubusercontent.com/94828147/194210974-b5e87751-4df6-40a7-8d24-92c43f003c80.png)
 
 
-# RESULT :
+# RESULT:
 Feature Generation process and Feature Scaling process is applied to the given data frames sucessfully.
 
 
